@@ -40,5 +40,5 @@
         "label": "IPN",
         "fetch_from": "employee.custom_ipn_number",
         "insert_after": "provident_fund_account"
-    },
+    }
 ]
