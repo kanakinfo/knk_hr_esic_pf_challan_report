@@ -110,9 +110,9 @@ doctype_js = {"Payroll Entry" : "public/js/payroll_entry.js"}
 # ---------------
 # Override standard doctype classes
 
-override_doctype_class = {
-	"Payroll Entry": "knk_hr_esic_pf_challan_report.overrides.custom_payroll_entry"
-}
+# override_doctype_class = {
+# 	"Payroll Entry": "knk_hr_esic_pf_challan_report.overrides.custom_payroll_entry"
+# }
 
 # Document Events
 # ---------------
