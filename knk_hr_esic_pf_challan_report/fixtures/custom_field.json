@@ -1,0 +1,44 @@
+[
+    {
+        "doctype": "Custom Field",
+        "dt": "Employee",
+        "module": "ESIC and PF Challan Report HR",
+        "name": "custom_uan_number",
+        "fieldname": "custom_uan_number",
+        "fieldtype": "Data",
+        "label": "UAN",
+        "insert_after": "pan_number"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Employee",
+        "module": "ESIC and PF Challan Report HR",
+        "name": "custom_ipn_number",
+        "fieldname": "custom_ipn_number",
+        "fieldtype": "Data",
+        "label": "IPN",
+        "insert_after": "provident_fund_account"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Salary Slip",
+        "module": "ESIC and PF Challan Report HR",
+        "name": "custom_uan_number",
+        "fieldname": "custom_uan_number",
+        "fieldtype": "Data",
+        "label": "UAN",
+        "fetch_from": "employee.custom_uan_number",
+        "insert_after": "pan_number"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Salary Slip",
+        "module": "ESIC and PF Challan Report HR",
+        "name": "custom_ipn_number",
+        "fieldname": "custom_ipn_number",
+        "fieldtype": "Data",
+        "label": "IPN",
+        "fetch_from": "employee.custom_ipn_number",
+        "insert_after": "provident_fund_account"
+    },
+]

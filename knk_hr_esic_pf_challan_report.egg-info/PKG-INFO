@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: knk-hr-esic-pf-challan-report
+Version: 0.0.1
+Summary: A frappe custom addon to add option to generate ESIC report and PF Challan Report from ErpNext.
+Author: Kanak Infosystems LLP.
+Author-email: sales@kanakinfosystems.com

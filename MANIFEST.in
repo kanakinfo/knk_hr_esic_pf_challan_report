@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include knk_hr_esic_pf_challan_report *.css
+recursive-include knk_hr_esic_pf_challan_report *.csv
+recursive-include knk_hr_esic_pf_challan_report *.html
+recursive-include knk_hr_esic_pf_challan_report *.ico
+recursive-include knk_hr_esic_pf_challan_report *.js
+recursive-include knk_hr_esic_pf_challan_report *.json
+recursive-include knk_hr_esic_pf_challan_report *.md
+recursive-include knk_hr_esic_pf_challan_report *.png
+recursive-include knk_hr_esic_pf_challan_report *.py
+recursive-include knk_hr_esic_pf_challan_report *.svg
+recursive-include knk_hr_esic_pf_challan_report *.txt
+recursive-exclude knk_hr_esic_pf_challan_report *.pyc
