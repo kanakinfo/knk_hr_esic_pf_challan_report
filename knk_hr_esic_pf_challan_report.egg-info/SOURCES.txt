@@ -15,6 +15,6 @@ knk_hr_esic_pf_challan_report.egg-info/top_level.txt
 knk_hr_esic_pf_challan_report/config/__init__.py
 knk_hr_esic_pf_challan_report/config/desktop.py
 knk_hr_esic_pf_challan_report/config/docs.py
-knk_hr_esic_pf_challan_report/esic_and_pf_challan_report_hr/__init__.py
+knk_hr_esic_pf_challan_report/knk_hr_esic_pf_challan_report/__init__.py
 knk_hr_esic_pf_challan_report/templates/__init__.py
 knk_hr_esic_pf_challan_report/templates/pages/__init__.py
