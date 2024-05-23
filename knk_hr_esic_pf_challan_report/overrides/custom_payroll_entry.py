@@ -35,14 +35,14 @@ def create_pf_details(payroll_entry):
 					employee_contribution = round(ddct.amount)
 			if employee_contribution > 0.0:
 				content += """#~#{0}#~#{1}#~#{2}#~#{3}#~#{4}#~#{5}#~#{6}#~#{7}#~#{8}#~#{9}#~#0#~# \n""".format(employee,uan,gross,basic,basic,basic,employee_contribution,employer_contribution_1,employer_contribution_2,absent_days)
-		file_doc = frappe.get_doc(
-		    {
-			"doctype": "File",
-			"file_name": ("PF Challan- '%s'" % payroll_entry),
-			"attached_to_doctype": 'Payroll Entry',
-			"attached_to_name": payroll_entry,
-			"content": content,
-			"folder": "Home"
-		  }
-		)
-		file_doc.save()
+	file_doc = frappe.get_doc(
+	    {
+		"doctype": "File",
+		"file_name": ("PF Challan- '%s'" % payroll_entry),
+		"attached_to_doctype": 'Payroll Entry',
+		"attached_to_name": payroll_entry,
+		"content": content,
+		"folder": "Home"
+	  }
+	)
+	file_doc.save()
