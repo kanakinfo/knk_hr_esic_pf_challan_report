@@ -11,7 +11,6 @@ import erpnext
 def create_pf_details(payroll_entry):
 	salary_slips = frappe.get_all("Salary Slip", pluck="name", filters={"payroll_entry": payroll_entry})
 	payroll_entry_doc = frappe.get_doc("Payroll Entry", payroll_entry)
-	payroll_entry_doc.custom_pf_challan_done = True
 	content = ""
 	for slp in salary_slips:
 		salary_slip_doc = frappe.get_doc('Salary Slip', slp)
@@ -30,11 +29,11 @@ def create_pf_details(payroll_entry):
 			if ddct.salary_component == "PF (Employer's Contribution)":
 					employer_contribution_1 = round(basic * 0.0833)
 					employer_contribution_2 = round(basic * 0.0367)
-			for ddct in salary_slip_doc.deductions:
-				if ddct.salary_component == "PF (Employee's Contribution)":
-					employee_contribution = round(ddct.amount)
-			if employee_contribution > 0.0:
-				content += """#~#{0}#~#{1}#~#{2}#~#{3}#~#{4}#~#{5}#~#{6}#~#{7}#~#{8}#~#{9}#~#0#~# \n""".format(employee,uan,gross,basic,basic,basic,employee_contribution,employer_contribution_1,employer_contribution_2,absent_days)
+		for ddct in salary_slip_doc.deductions:
+			if ddct.salary_component == "PF (Employee's Contribution)":
+				employee_contribution = round(ddct.amount)
+		if employee_contribution > 0.0:
+			content += """#~#{0}#~#{1}#~#{2}#~#{3}#~#{4}#~#{5}#~#{6}#~#{7}#~#{8}#~#{9}#~#0#~# \n""".format(employee,uan,gross,basic,basic,basic,employee_contribution,employer_contribution_1,employer_contribution_2,absent_days)
 	file_doc = frappe.get_doc(
 	    {
 		"doctype": "File",
