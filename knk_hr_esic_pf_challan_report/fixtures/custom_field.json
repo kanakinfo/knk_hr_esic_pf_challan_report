@@ -7,7 +7,7 @@
         "fieldname": "custom_uan_number",
         "fieldtype": "Data",
         "label": "UAN",
-        "insert_after": "pan_number"
+        "insert_after": "ctc"
     },
     {
         "doctype": "Custom Field",
@@ -17,7 +17,7 @@
         "fieldname": "custom_ipn_number",
         "fieldtype": "Data",
         "label": "IPN",
-        "insert_after": "provident_fund_account"
+        "insert_after": "ctc"
     },
     {
         "doctype": "Custom Field",
@@ -28,7 +28,7 @@
         "fieldtype": "Data",
         "label": "UAN",
         "fetch_from": "employee.custom_uan_number",
-        "insert_after": "pan_number"
+        "insert_after": "payroll_frequency"
     },
     {
         "doctype": "Custom Field",
@@ -39,6 +39,6 @@
         "fieldtype": "Data",
         "label": "IPN",
         "fetch_from": "employee.custom_ipn_number",
-        "insert_after": "provident_fund_account"
+        "insert_after": "payroll_frequency"
     }
 ]
